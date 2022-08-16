@@ -1,0 +1,21 @@
+#Raul Ricardo Reales Cohen y Erick Enrique Bastidas Santana
+#Primer punto
+vec <- sample(0:100,10)
+lvec <- length(vec)
+vm <- vec[1]
+for(i in 1:10 ){
+  if (vec[i] < vm ){
+    vm <- vec[i]
+    
+    
+  }
+}
+cat(sprintf("El valor minimo es: %.f", vm))
+
+#Segundo punto
+misdatos <- rnorm(100)
+indices <- sample(1:100,10)
+misdatos[indices] <- NA
+X <- mean(misdatos[!(is.na(misdatos))])
+Y <- sd(misdatos[!(is.na(misdatos))])
+cat(sprintf("El promedio es: %.7f y la desviacion estandar es: %.7f", X,Y))
